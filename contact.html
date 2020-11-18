@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleContact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Run'Zik</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="headerTop">
+        <a href="index.html">
+          <img src="img/logo-service.png" alt="Run'Zik">
+        </a>
+        <div class="navigation">
+          <input class="searchBar" type="text" value="Recherche...">
+          <div class="menu">
+              <ul>
+                <li>
+                  <a href="marque.html">Nos service</a>
+                </li>
+                <li>
+                  <a href="technologies.html">Notre équipe</a>
+                </li>
+                <li>
+                  <a href="marque.html">L'histoire</a>
+                  
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="accountCart">
+          <div class="accountHover">
+            <a href="account.html" title="Mon compte">
+              <img class="icon" src="images/account.png" alt="Mon compte">
+            </a>
+            <div class="connectAccount">
+              <p class="important">Pas de compte ?</p>
+              <a href="inscription.html" title="S'inscrire">Inscrivez-vous</a>
+              <p>Ou</p>
+              <p class="important">Connectez-vous</p>
+              <div class="elementConnexion">
+                <label for="mail">Adresse e-mail</label>
+                <input class="searchBar connexionForm" type="text" id="mail">
+              </div>
+              <div class="elementConnexion">
+                <label for="pass">Mot de passe</label>
+                <input class="searchBar connexionForm" type="password" id="pass">
+              </div>
+              <div class="connexionButton">
+                <input class="button submitConnexion" type="submit" value="Se connecter">
+              </div>
+            </div>
+          </div>
+          <a href="cart.html" title="Mon panier">
+            <img class="icon" src="images/cart.png" alt="Panier">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+		<form method="POST" action="form_contact.php" name="mon_formulaire">
+			<p>
+				<label for="name"></label>
+				<input type="text" name="name" id="name" placeholder="Votre nom">
+			</p>
+			<p>
+				<label for="mail"></label>
+				<input type="email" name="mail" id="mail" placeholder="Votre adresse e-mail">
+			</p>
+			<p>
+				<textarea type="text" name="message" id="message" placeholder="Votre message" rows="5" cols="30"></textarea>
+			</p>
+			<input type="checkbox" id="scales" name="scales">
+			<label for="terms">J'accepte les <span class="big">termes et conditions</span> et la <span class="big">politique de confidentialité</span> .</label>
+			<p>
+				<input type="submit" value="Envoyer" name="submitForm">
+			</p>
+		</form>
+  </div>
+  <footer>
+    <div class="footerTop">
+      <div class="newsletter">
+        <div class="textNewsletter">
+          <p>Inscrivez-vous à la newsletter et recevez toutes nos offres exclusives</p>
+        </div>
+        <div class="formNewsletter">
+          <input class="newsletterMail" type="mail" value="Entrez votre adresse mail">
+          <input class="button newsletterSubmit" type="submit" value="OK">
+        </div>
+      </div>
+      <div class="socialNetworks">
+        <a href"#" title="Découvrir notre Pinterest">
+          <img src="images/pinterest.png">
+        </a>
+        <a href"#" title="Découvrir notre Facebook">
+          <img src="images/facebook.png">
+        </a>
+        <a href"#" title="Découvrir notre Twitter">
+          <img src="images/twitter.png">
+        </a>
+      </div>
+    </div>
+    <div class="footerBottom">
+      <div class="footerBottomFirstPart">
+        <div class="payPlug">
+          <img src="images/payplug.png">
+        </div>
+        <div class="footerList">
+          <ul>
+            <li>
+              <a href="FAQ.html">FAQ</a>
+            </li>
+            <li>
+              <a href="contact.html">Contactez-nous</a>
+            </li>
+            <li>
+              <a href="mentions.html">Mentions Légales</a>
+            </li>
+            <li>
+              <a href="mentions.html">Conditions d'utilisation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottomSecondPart">
+        <p>© 2020 Serv'Drone</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
